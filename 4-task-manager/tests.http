@@ -1,0 +1,33 @@
+### INDEX
+GET http://127.0.0.1:3000 HTTP/1.1
+
+
+### GET ALL TASKS
+GET http://127.0.0.1:3000/tasks HTTP/1.1
+
+
+### GET ONE TASK
+GET http://127.0.0.1:3000/tasks/63232a7e1d832ebc8b589d90 HTTP/1.1
+Accept-Language: ["en","tr"]
+
+### DELETE ONE TASK
+DELETE  http://127.0.0.1:3000/tasks/63232a7e1d832ebc8b589d90 HTTP/1.1
+
+
+### PUT ONE TASK
+PUT  http://127.0.0.1:3000/tasks/63232ae377352f2f83109557 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"task",
+    "content":"content"
+}
+
+### CREATE ONE TASK
+POST http://127.0.0.1:3000/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"task 1",
+    "content":"content 1"
+}

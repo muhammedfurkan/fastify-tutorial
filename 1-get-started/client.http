@@ -1,0 +1,5 @@
+### Index route
+GET http://127.0.0.1:3000 HTTP/1.1
+
+### Get One By Id
+GET http://127.0.0.1:3000/search/1 HTTP/1.1
